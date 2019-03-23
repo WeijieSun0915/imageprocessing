@@ -1,5 +1,5 @@
 # imageprocessing
-"Open" directs users to open a directory which search the .bmp file.
+The "Open" button directs users to open a directory which search the .bmp file.
 In this project, once loading the .bmp picture, the size of the picture will be displayed on the left upper conner.
 "next" to continue to process the image. The first function shows the value of red, green and blue channel in a chart presentation.
 The second function shows the 1.5 times brighter image of original image. The third function shows the black and white images of original images. The last function shows the dithering of grey scale image by using the Bayer Matrix which is 8 * 8. By using the different matrix like 4*4, in order to get the best quality image, we can simply use following code. To get 16, we can use the color level 256 divide the sample matrix which is (4*4=16), which is 256/16=16. We can get the highest quality image(see first picture on the left). To deeply explanation of above code is that we divide color level into 16 parts. For each part, we compare it with sample matrix. If that parts is larger than the sample matrix, we can print dot. With the same method, we can also get the image by  using 2 * 2 matrix which has a extremly low image quailty.
